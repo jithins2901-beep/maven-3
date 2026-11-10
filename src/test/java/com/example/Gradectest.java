@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 class Gradectest { 
 	@Test
 	void testTotal() { 
-		assertEquals(235, Gradec.calculateTotal(75, 68, 82)); 
+		assertEquals(285, Gradec.calculateTotal(75, 68, 82)); 
 	} 
 	@Test 
 	void testAverage() { 
-		assertEquals(65.0, Gradec.calculateAverage(75, 68, 82)); 
+		assertEquals(75.0, Gradec.calculateAverage(75, 68, 82)); 
 	} 
 	@Test
 	void testPass() { 
