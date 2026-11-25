@@ -21,12 +21,6 @@
     <sonar.projectName>sonar-maven-jenkins</sonar.projectName>
     <sonar.host.url>http://localhost:9000</sonar.host.url>
 
-    <plugin>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>5.8.0.7211</version>
-    </plugin>
-
 
   </properties>
 
@@ -97,6 +91,11 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>5.8.0.7211</version>
         </plugin>
         
       </plugins>
