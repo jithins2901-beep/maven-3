@@ -14,6 +14,20 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+
+    <sonar.projectKey>sonar-maven-jenkins</sonar.projectKey>
+    <sonar.projectName>sonar-maven-jenkins</sonar.projectName>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+
+    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>5.8.0.7211</version>
+    </plugin>
+
+
   </properties>
 
   <dependencyManagement>
@@ -84,6 +98,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
         </plugin>
+        
       </plugins>
     </pluginManagement>
   </build>
